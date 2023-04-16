@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <title>Weather App</title>
+</head>
+
+<body id="body">
+    <div class="search-container">
+        <input type="text" placeholder="Enter city">
+        <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="weather-container">
+        <div class="weather-info flex-container">
+            <div class="img-container">
+                <img src="./icons/cloud-icon.png" alt="" id="weather-icon">
+            </div>
+            <div class="temp-container">
+                <p class="temp"><span id="current-temp">N/A</span>&deg;</p>
+                <p class="feels-like">Feels like: <span id="feels-like-temp">N/A</span>&deg;C</p>
+            </div>
+        </div>
+        <div class="weather-extra-info flex-container">
+            <div class="city-container">
+                <h1 id="city-name">City</h1>
+            </div>
+            <div class="info-container">
+                <p id="weather-description">Weather</p>
+                <p class="pressure">Pressure: <span id="pressure-value">N/A</span> hPa</p>
+                <p class="humidity">Humidity: <span id="humidity-value">N/A</span>%</p>
+                <p class="wind">Wind speed: <span id="speed-value">N/A</span> km/h</p>
+                <p class="visibility">Visibility: <span id="visibility-value">N/A</span> km/h</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

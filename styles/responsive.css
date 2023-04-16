@@ -1,0 +1,31 @@
+@media screen and (max-width: 600px) { 
+
+    .weather-container {
+        flex-direction: column;
+        max-width: 95%;
+        height: auto;
+        padding: 50px 10px;
+    }
+
+    #weather-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .temp {
+        font-size: 100px
+    }
+
+    .flex-container {
+        text-align: center;
+    }
+
+    .city-container {
+        justify-content: center;
+        margin-bottom: 30px
+    }
+
+    #city-name {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,136 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+#body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../images/clear-sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.search-container {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.search-container>input {
+    width: 50%;
+    height: 46.58px;
+    font-size: 16px;
+    border: none;
+    border-radius: 38px;
+    text-align: center;
+    transition: font-size, ease-in-out, 0.5s;
+}
+
+.search-container>input::placeholder {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.search-container>input:focus {
+    text-indent: 10px;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    transition: font-size, ease-in-out, 0.5s;
+}
+
+.search-container>#search-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 38px;
+    cursor: pointer;
+    background-color: black;
+}
+
+.search-container>#search-btn:hover {
+    background-color: rgb(51, 51, 51)
+}
+
+.search-container>#search-btn>i {
+    font-size: 16px;
+    color: white;
+}
+
+.weather-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background: rgba(0, 0, 0, 0.8);
+    max-width: 70%;
+    height: 597px;
+    margin: 0 auto;
+    border-radius: 38px;
+    backdrop-filter: blur(3.5px);
+    box-shadow: -15px 0px 20px 5px rgba(0, 0, 0, 0.25),
+        15px 0px 20px 5px rgba(0, 0, 0, 0.25),
+        0px -15px 20px 5px rgba(0, 0, 0, 0.25),
+        0px 15px 20px 5px rgba(0, 0, 0, 0.25);
+    margin-top: 50px;
+    margin-bottom:50px;
+    transition: max-width, ease-in-out, 0.2s;
+    padding: 50px;
+}
+
+.weather-info,
+.weather-extra-info {
+    height: 100%;
+}
+
+.weather-extra-info {
+    text-align: right;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.feels-like {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+#weather-icon {
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.temp {
+    font-size: 200px;
+    margin: 0;
+}
+
+.city-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 35%;
+}
+
+#current-temp {
+    font-weight: bold;
+}
+
+#city-name {
+    font-size: 102px;
+    margin: 0;
+}
+
+#weather-description {
+    text-transform: capitalize;
+}
+
+.info-container p {
+    font-size: 24px;
+    margin-top: 0px;
+}
